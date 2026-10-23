@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+<title>Winter Sun • Cozy Date Night Mobile Theater</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+    @layer base {
+      html, body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Comfortaa', cursive, sans-serif;
+        background-color: #10111a;
+        color: #f1eff9;
+        -webkit-tap-highlight-color: transparent;
+      }
+      body {
+        overscroll-behavior-y: none;
+      }
+    }
+    .material-symbols-outlined {
+      font-family: 'Material Symbols Outlined' !important;
+      font-weight: normal;
+      font-style: normal;
+      font-size: 20px;
+      line-height: 1;
+      display: inline-block;
+      white-space: nowrap;
+      word-wrap: normal;
+      direction: ltr;
+      -webkit-font-feature-settings: 'liga';
+      -webkit-font-smoothing: antialiased;
+    }
+    ::-webkit-scrollbar {
+      display: none;
+    }
+  </style>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "background": "#10111a",
+            "surface": "#12131c",
+            "surface-container-lowest": "#0d0e16",
+            "surface-container-low": "#161824",
+            "surface-container": "#1c1e2d",
+            "surface-container-high": "#25273a",
+            "surface-container-highest": "#31344c",
+            "surface-bright": "#3d405b",
+            "on-surface": "#f1eff9",
+            "on-surface-variant": "#c5c3d8",
+            "outline": "#787691",
+            "outline-variant": "#43455c",
+            "primary": "#ff79b0",
+            "primary-container": "#ffb0cb",
+            "primary-fixed": "#ffd9e4",
+            "on-primary": "#57002e",
+            "on-primary-container": "#770543",
+            "secondary": "#4ee5c5",
+            "secondary-container": "#104c41",
+            "secondary-fixed": "#7dfade",
+            "on-secondary": "#00382e",
+            "on-secondary-container": "#6bf8db",
+            "tertiary": "#d4bbff",
+            "tertiary-container": "#3d2273",
+            "on-tertiary": "#2e0f63"
+          },
+          borderRadius: {
+            "DEFAULT": "1rem",
+            "lg": "1.5rem",
+            "xl": "2rem",
+            "2xl": "2.5rem",
+            "full": "9999px"
+          },
+          fontFamily: {
+            "sans": ["Comfortaa", "cursive", "sans-serif"],
+            "body": ["Comfortaa", "cursive", "sans-serif"],
+            "title": ["Comfortaa", "cursive", "sans-serif"]
+          }
+        }
+      }
+    };
+  </script>
+</head>
+<body class="bg-[#10111a] text-on-surface font-sans min-h-screen flex justify-center selection:bg-primary/30 selection:text-primary">
+<!-- Mobile Viewport Wrapper (390px phone container) -->
+<div class="w-full max-w-[390px] min-h-screen bg-surface-container-lowest flex flex-col relative shadow-2xl border-x border-surface-container-high/40 pb-24">
+<!-- 1. Mobile Header (Compact top bar) -->
+<header class="sticky top-0 z-40 bg-surface/95 backdrop-blur-xl border-b border-surface-container-high/50 px-3.5 py-2.5 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded-full bg-gradient-to-tr from-primary to-secondary flex items-center justify-center shadow-md shadow-primary/25">
+<span class="material-symbols-outlined text-surface-container-lowest text-sm" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="text-xs font-bold text-on-surface tracking-tight">Winter Sun</span>
+<span class="text-primary text-xs">♥</span>
+</div>
+<span class="text-[9px] text-secondary font-semibold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span> Synced 0ms
+          </span>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<!-- Room pill -->
+<div class="flex items-center gap-1 bg-surface-container-high/80 px-2 py-1 rounded-full border border-primary/20">
+<span class="text-[10px] text-on-surface font-semibold tracking-wider">#8821</span>
+</div>
+<!-- Couple Avatars & Remote indicator -->
+<button class="flex items-center gap-1.5 bg-surface-container px-2 py-1 rounded-full border border-secondary/30 active:scale-95 transition-transform" title="Alex has remote - tap to pass" type="button">
+<div class="flex -space-x-1.5 items-center">
+<img alt="Alex" class="w-5 h-5 rounded-full object-cover ring-1.5 ring-primary" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDODFb3DzCFzNr88etHIwbqWHew3lEUUPAaIsyP-tekwiOhNG21GIkN7swIKPbVPEWPaVrRKM3HOsf0AtktW6-p_C7hOxijtbY3hOQgCFo0kldul7UJmZCvrgl8CvRF6ppYFN8msXPIClqKHyv9SZEeCNn2WRKryb7au4g_DJrZ289ICJO5sh5iqISEfPCxhIkOGRnHjRmoBMHeqNZAluFEx8XSJKktStn31v2JyuK-6_-CgKPXUo1I"/>
+<img alt="Maya" class="w-5 h-5 rounded-full object-cover ring-1.5 ring-secondary" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBoVvz8WSxs1qdPx5EyRKvQWtiS9KU1Mkx1xatqGqjnKoE63iN9a3K_09S_PiHjyoNRZ6UO10Lz0YKBpiMt11zoqN9pm4bcRipTGQE7mi3yvoVZjKPktPg4GlI0QsfmieLS_YzYD6OZRZqs0DzfF6rUvmxFOyfzA2ssUfl_iPfvrVw1fcD00kwLeumDZtbqG9cfqtXYqOsUK4LbHnRvqehdIE277yaNCT27VaQ2dQL7WPNu2F2ITxgv"/>
+</div>
+<span class="text-[10px] font-bold text-secondary flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[12px]">sports_esports</span>
+</span>
+</button>
+</div>
+</header>
+<!-- 2. Sticky 16:9 Mobile Video Player -->
+<div class="sticky top-[51px] z-30 w-full aspect-video bg-black relative group select-none shadow-xl overflow-hidden border-b border-surface-container-high/60">
+<!-- Background Video Still Frame -->
+<img alt="Whispers of the Heart Hilltop Sunset Scene" class="absolute inset-0 w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1WQ5prJZ0JIqQcUW1Xpkkd9tDhRWU8BrZN0raeoMyFC44xcv-zZe9X0f4OqTpvt-AY4H6Hi0ZHTPogdHdbjOQHuc2xCLQf6L-UCPdLpuVQOQGipqibN6hCgAgnOtNJTquSHKFMbWiSf4aMDU3Par1YtP9HdTpSYvkMW0oQUg3_A2qBrWsu602_RsvVhfSd2pstcywPksuZbuhD4Vz9n_vvByR4vo8MOfUHkUGfwOVdsKWlBxBvWgQ0lDw"/>
+<!-- Cozy Gradient Scrim Overlay -->
+<div class="absolute inset-0 bg-gradient-to-t from-background/95 via-black/30 to-background/70 pointer-events-none"></div>
+<!-- Top Overlay: Telemetry & Quality Badges -->
+<div class="absolute top-2 left-2.5 right-2.5 flex items-center justify-between z-20">
+<div class="flex items-center gap-1.5 flex-wrap">
+<span class="text-[9px] font-bold text-primary-fixed bg-surface-container-lowest/80 backdrop-blur-md px-2 py-0.5 rounded-full border border-primary/30 shadow-sm">
+            1080p BluRay
+          </span>
+<span class="text-[9px] font-bold text-secondary bg-surface-container-lowest/80 backdrop-blur-md px-2 py-0.5 rounded-full border border-secondary/30 flex items-center gap-1 shadow-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span> 0.0s Sync
+          </span>
+</div>
+<div class="flex items-center gap-1">
+<span class="text-[9px] font-semibold text-on-surface-variant bg-surface-container-lowest/85 backdrop-blur-md px-1.5 py-0.5 rounded-full border border-white/10">
+            JP 5.1
+          </span>
+<button class="w-7 h-7 rounded-full bg-surface-container-lowest/80 backdrop-blur-md text-on-surface hover:text-primary flex items-center justify-center border border-white/10 active:scale-90 transition-transform" title="Miniplayer" type="button">
+<span class="material-symbols-outlined text-sm">picture_in_picture_alt</span>
+</button>
+</div>
+</div>
+<!-- Romantic Subtitle Banner -->
+<div class="absolute bottom-9 left-2 right-2 flex justify-center pointer-events-none z-20">
+<div class="bg-black/75 backdrop-blur-md px-3 py-1 rounded-xl border border-white/10 text-center shadow-lg max-w-[95%]">
+<p class="text-[11px] font-semibold text-white drop-shadow leading-snug">
+            Look at the sunset... isn't it breathtaking with you here? <span class="text-primary">♡</span>
+</p>
+</div>
+</div>
+<!-- Scrubber & Primary Playback Controls -->
+<div class="absolute bottom-0 left-0 right-0 px-2.5 pb-1.5 pt-4 bg-gradient-to-t from-background/95 to-transparent flex flex-col gap-1 z-20">
+<!-- Pink Scrubber Track with Mint Thumb -->
+<div class="relative w-full h-3 flex items-center cursor-pointer">
+<div class="w-full h-1 bg-surface-container-highest/80 rounded-full relative overflow-visible">
+<!-- Buffered -->
+<div class="absolute top-0 left-0 bottom-0 w-[72%] bg-secondary/30 rounded-full"></div>
+<!-- Played (Pastel Pink) -->
+<div class="absolute top-0 left-0 bottom-0 w-[38.4%] bg-primary rounded-full relative">
+<!-- Mint Teal Thumb Indicator -->
+<div class="absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2 w-2.5 h-2.5 bg-secondary rounded-full shadow-md ring-2 ring-white/90"></div>
+</div>
+</div>
+</div>
+<!-- Time & Controls Cluster -->
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<button class="w-7 h-7 rounded-full bg-primary/20 text-primary flex items-center justify-center active:scale-90 transition-transform" title="Pause / Play" type="button">
+<span class="material-symbols-outlined text-base" style="font-variation-settings: 'FILL' 1;">pause</span>
+</button>
+<span class="text-[10px] text-on-surface-variant font-medium">
+<span class="text-on-surface font-semibold">00:42:18</span> / 01:51:24
+            </span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="text-[9px] bg-secondary/15 text-secondary px-1.5 py-0.5 rounded font-bold border border-secondary/30">
+              STEREO
+            </span>
+<button class="w-7 h-7 flex items-center justify-center text-on-surface hover:text-primary transition-colors active:scale-90" title="10s rewind" type="button">
+<span class="material-symbols-outlined text-base">replay_10</span>
+</button>
+<button class="w-7 h-7 flex items-center justify-center text-on-surface hover:text-primary transition-colors active:scale-90" title="Fullscreen" type="button">
+<span class="material-symbols-outlined text-base">fullscreen</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- 3. Segmented Navigation Tabs -->
+<div class="px-3 pt-2.5 pb-1 bg-surface-container-lowest">
+<div class="bg-surface-container p-1 rounded-2xl flex items-center gap-1 border border-surface-container-high/60">
+<button class="flex-1 py-1.5 px-3 rounded-xl bg-surface-container-high text-primary font-bold text-xs flex items-center justify-center gap-1.5 shadow-sm border border-primary/25 transition-all" type="button">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">favorite</span>
+<span>Cozy Chat</span>
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-ping"></span>
+</button>
+<button class="flex-1 py-1.5 px-3 rounded-xl text-on-surface-variant hover:text-on-surface font-semibold text-xs flex items-center justify-center gap-1.5 transition-colors" type="button">
+<span class="material-symbols-outlined text-sm">tune</span>
+<span>Audio &amp; Sync</span>
+</button>
+</div>
+</div>
+<!-- 4. Quick Precision Sync & Settings Ribbon (Mobile compact) -->
+<div class="px-3 py-1.5">
+<div class="bg-surface-container/70 rounded-xl p-2 border border-surface-container-high/50 flex items-center justify-between text-[10px]">
+<div class="flex items-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined text-xs text-secondary">graphic_eq</span>
+<span>Sub Delay:</span>
+<span class="text-primary font-bold bg-primary/15 px-1.5 py-0.2 rounded border border-primary/25">+150ms</span>
+</div>
+<div class="flex items-center gap-1">
+<button class="px-2 py-0.5 rounded-full bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-semibold border border-white/5 active:scale-95" type="button">-100ms</button>
+<button class="px-2 py-0.5 rounded-full bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-semibold border border-white/5 active:scale-95" type="button">+100ms</button>
+<button class="px-2 py-0.5 rounded-full bg-secondary/15 text-secondary border border-secondary/30 font-semibold active:scale-95" type="button">Auto</button>
+</div>
+</div>
+</div>
+<!-- 5. Pass Remote Quick Action Banner -->
+<div class="px-3 py-1">
+<div class="bg-gradient-to-r from-primary/15 via-surface-container to-secondary/15 rounded-xl px-3 py-2 border border-primary/20 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded-full bg-primary/20 text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-xs">sports_esports</span>
+</div>
+<div class="flex flex-col">
+<span class="text-[11px] font-bold text-on-surface">Alex has the remote</span>
+<span class="text-[9px] text-on-surface-variant">Tap to pass control to Maya</span>
+</div>
+</div>
+<button class="min-h-[32px] px-2.5 py-1 rounded-full bg-secondary text-on-secondary text-[11px] font-bold flex items-center gap-1 shadow-sm shadow-secondary/20 active:scale-95 transition-transform" type="button">
+<span class="material-symbols-outlined text-xs">sync_alt</span>
+<span>Pass 📱</span>
+</button>
+</div>
+</div>
+<!-- 6. Real-time Romantic Couple Chat Stream -->
+<div class="flex-1 px-3 py-2 flex flex-col gap-2.5 overflow-y-auto">
+<!-- Sync Event Tag -->
+<div class="self-center bg-surface-container/80 border border-primary/25 px-2.5 py-1 rounded-full flex items-center gap-1.5 shadow-sm my-0.5">
+<span class="material-symbols-outlined text-[11px] text-primary" style="font-variation-settings: 'FILL' 1;">favorite</span>
+<span class="text-[10px] text-on-surface-variant">
+<strong class="text-primary font-bold">Alex</strong> synced movie to <strong class="text-secondary font-semibold">00:42:15</strong>
+</span>
+</div>
+<!-- Message: Maya -->
+<div class="flex items-start gap-2">
+<img alt="Maya" class="w-7 h-7 rounded-full object-cover ring-1.5 ring-secondary/60 flex-shrink-0 mt-0.5" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBoVvz8WSxs1qdPx5EyRKvQWtiS9KU1Mkx1xatqGqjnKoE63iN9a3K_09S_PiHjyoNRZ6UO10Lz0YKBpiMt11zoqN9pm4bcRipTGQE7mi3yvoVZjKPktPg4GlI0QsfmieLS_YzYD6OZRZqs0DzfF6rUvmxFOyfzA2ssUfl_iPfvrVw1fcD00kwLeumDZtbqG9cfqtXYqOsUK4LbHnRvqehdIE277yaNCT27VaQ2dQL7WPNu2F2ITxgv"/>
+<div class="flex flex-col max-w-[80%]">
+<div class="flex items-baseline gap-1.5 mb-0.5">
+<span class="text-[11px] font-bold text-secondary">Maya</span>
+<span class="text-[9px] text-outline">42:01</span>
+</div>
+<div class="bg-surface-container p-2.5 rounded-2xl rounded-tl-xs text-on-surface text-xs leading-relaxed border border-surface-container-high/40 shadow-sm">
+            Grabbed the popcorn! 🍿 Ready for the cute hillside bike ride scene!
+          </div>
+</div>
+</div>
+<!-- Message: Alex (Self) -->
+<div class="flex items-start gap-2 justify-end">
+<div class="flex flex-col max-w-[80%] items-end">
+<div class="flex items-baseline gap-1.5 mb-0.5">
+<span class="text-[9px] text-outline">42:08</span>
+<span class="text-[11px] font-bold text-primary">Alex</span>
+</div>
+<div class="bg-primary/20 border border-primary/35 p-2.5 rounded-2xl rounded-tr-xs text-on-surface text-xs leading-relaxed shadow-sm">
+            Yay! And I dimmed the room lights too. Look at the twilight colors here! 🌅
+          </div>
+</div>
+<img alt="Alex" class="w-7 h-7 rounded-full object-cover ring-1.5 ring-primary/60 flex-shrink-0 mt-0.5" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDODFb3DzCFzNr88etHIwbqWHew3lEUUPAaIsyP-tekwiOhNG21GIkN7swIKPbVPEWPaVrRKM3HOsf0AtktW6-p_C7hOxijtbY3hOQgCFo0kldul7UJmZCvrgl8CvRF6ppYFN8msXPIClqKHyv9SZEeCNn2WRKryb7au4g_DJrZ289ICJO5sh5iqISEfPCxhIkOGRnHjRmoBMHeqNZAluFEx8XSJKktStn31v2JyuK-6_-CgKPXUo1I"/>
+</div>
+<!-- Message: Maya -->
+<div class="flex items-start gap-2">
+<img alt="Maya" class="w-7 h-7 rounded-full object-cover ring-1.5 ring-secondary/60 flex-shrink-0 mt-0.5" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBoVvz8WSxs1qdPx5EyRKvQWtiS9KU1Mkx1xatqGqjnKoE63iN9a3K_09S_PiHjyoNRZ6UO10Lz0YKBpiMt11zoqN9pm4bcRipTGQE7mi3yvoVZjKPktPg4GlI0QsfmieLS_YzYD6OZRZqs0DzfF6rUvmxFOyfzA2ssUfl_iPfvrVw1fcD00kwLeumDZtbqG9cfqtXYqOsUK4LbHnRvqehdIE277yaNCT27VaQ2dQL7WPNu2F2ITxgv"/>
+<div class="flex flex-col max-w-[80%]">
+<div class="flex items-baseline gap-1.5 mb-0.5">
+<span class="text-[11px] font-bold text-secondary">Maya</span>
+<span class="text-[9px] text-outline">42:15</span>
+</div>
+<div class="bg-surface-container p-2.5 rounded-2xl rounded-tl-xs text-on-surface text-xs leading-relaxed border border-surface-container-high/40 shadow-sm">
+            Aww this soundtrack is so pretty ✨ That acoustic guitar melody gets me every time 🥺
+          </div>
+</div>
+</div>
+<!-- Message: Maya (Recent) -->
+<div class="flex items-start gap-2">
+<img alt="Maya" class="w-7 h-7 rounded-full object-cover ring-1.5 ring-secondary/60 flex-shrink-0 mt-0.5" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBoVvz8WSxs1qdPx5EyRKvQWtiS9KU1Mkx1xatqGqjnKoE63iN9a3K_09S_PiHjyoNRZ6UO10Lz0YKBpiMt11zoqN9pm4bcRipTGQE7mi3yvoVZjKPktPg4GlI0QsfmieLS_YzYD6OZRZqs0DzfF6rUvmxFOyfzA2ssUfl_iPfvrVw1fcD00kwLeumDZtbqG9cfqtXYqOsUK4LbHnRvqehdIE277yaNCT27VaQ2dQL7WPNu2F2ITxgv"/>
+<div class="flex flex-col max-w-[80%]">
+<div class="flex items-baseline gap-1.5 mb-0.5">
+<span class="text-[11px] font-bold text-secondary">Maya</span>
+<span class="text-[9px] text-secondary font-semibold">Just now</span>
+</div>
+<div class="bg-surface-container p-2.5 rounded-2xl rounded-tl-xs text-on-surface text-xs leading-relaxed border border-surface-container-high/40 shadow-sm">
+            Wait pause 1 sec grabbing a blanket! It's chilly over here 🐈
+          </div>
+</div>
+</div>
+<!-- Low Latency & Buffer Status Pill -->
+<div class="self-center bg-surface-container-low/90 rounded-full px-3 py-1 border border-surface-container-high/50 flex items-center gap-2 text-[10px] text-on-surface-variant mt-1">
+<span class="flex items-center gap-1 text-secondary">
+<span class="material-symbols-outlined text-[12px]">wifi_tethering</span>
+          Ultra-low latency 12ms
+        </span>
+<span class="text-outline">•</span>
+<span class="text-on-surface font-medium">99% buffer</span>
+</div>
+</div>
+<!-- 7. Fixed Bottom Sticky Dock: Quick Emoji Reactions & Input Bar -->
+<div class="fixed bottom-0 left-1/2 -translate-x-1/2 w-full max-w-[390px] bg-surface/95 backdrop-blur-xl border-t border-surface-container-high/70 z-50 flex flex-col pb-safe">
+<!-- Quick Reaction Bar -->
+<div class="px-3 py-1.5 border-b border-surface-container-high/30 flex items-center justify-around">
+<button class="flex items-center gap-0.5 px-2 py-1 rounded-full bg-surface-container/60 hover:bg-surface-container-high active:scale-110 transition-transform min-h-[36px]" type="button">
+<span class="text-sm">🍿</span>
+<span class="text-[10px] text-on-surface-variant font-bold">12</span>
+</button>
+<button class="flex items-center gap-0.5 px-2 py-1 rounded-full bg-primary/15 border border-primary/25 hover:bg-primary/20 active:scale-110 transition-transform min-h-[36px]" type="button">
+<span class="text-sm">💖</span>
+<span class="text-[10px] text-primary font-bold">24</span>
+</button>
+<button class="flex items-center gap-0.5 px-2 py-1 rounded-full bg-surface-container/60 hover:bg-surface-container-high active:scale-110 transition-transform min-h-[36px]" type="button">
+<span class="text-sm">🥺</span>
+<span class="text-[10px] text-on-surface-variant font-bold">7</span>
+</button>
+<button class="flex items-center gap-0.5 px-2 py-1 rounded-full bg-secondary/15 border border-secondary/25 hover:bg-secondary/20 active:scale-110 transition-transform min-h-[36px]" type="button">
+<span class="text-sm">✨</span>
+<span class="text-[10px] text-secondary font-bold">19</span>
+</button>
+<button class="flex items-center gap-0.5 px-2 py-1 rounded-full bg-surface-container/60 hover:bg-surface-container-high active:scale-110 transition-transform min-h-[36px]" type="button">
+<span class="text-sm">🐱</span>
+<span class="text-[10px] text-on-surface-variant font-bold">6</span>
+</button>
+<button class="flex items-center gap-0.5 px-2 py-1 rounded-full bg-surface-container/60 hover:bg-surface-container-high active:scale-110 transition-transform min-h-[36px]" type="button">
+<span class="text-sm">😂</span>
+<span class="text-[10px] text-on-surface-variant font-bold">8</span>
+</button>
+</div>
+<!-- Chat Input Field -->
+<div class="p-2.5 flex items-center gap-2">
+<button class="w-10 h-10 rounded-full text-on-surface-variant hover:text-secondary active:scale-95 flex items-center justify-center flex-shrink-0 transition-colors" title="Emoji &amp; Stickers" type="button">
+<span class="material-symbols-outlined text-xl">sentiment_satisfied</span>
+</button>
+<div class="flex-1 min-h-[42px] bg-surface-container-high rounded-full px-3.5 flex items-center border border-surface-container-highest focus-within:border-secondary focus-within:ring-1 focus-within:ring-secondary/50 transition-all">
+<input class="w-full bg-transparent outline-none text-xs text-on-surface placeholder-outline font-medium" placeholder="Send sweet note to Maya..." type="text"/>
+</div>
+<button class="w-10 h-10 rounded-full bg-gradient-to-tr from-secondary to-secondary-fixed text-on-secondary active:scale-95 flex items-center justify-center shadow-lg shadow-secondary/20 transition-transform flex-shrink-0" title="Send note" type="button">
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">send</span>
+</button>
+</div>
+</div>
+</div>
+</body></html>

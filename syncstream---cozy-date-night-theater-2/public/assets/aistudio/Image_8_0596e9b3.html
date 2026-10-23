@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><title>Winter Sun • Cozy Movie Date</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><style>
+  @layer base {
+    * {
+      font-family: 'Comfortaa', cursive, sans-serif;
+    }
+    html, body {
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      overscroll-behavior: none;
+    }
+    main > :first-child {
+      margin-top: 0 !important;
+    }
+    main > :last-child {
+      margin-bottom: 0 !important;
+    }
+  }
+  .material-symbols-outlined {
+    font-family: 'Material Symbols Outlined' !important;
+    font-weight: normal !important;
+    font-style: normal !important;
+    font-size: 20px;
+    line-height: 1;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+  }
+  ::-webkit-scrollbar {
+    display: none;
+  }
+</style><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        colors: {
+          "background": "#12131c",
+          "surface-container-lowest": "#0d0e16",
+          "surface-container-low": "#181a26",
+          "surface-container": "#202334",
+          "surface-container-high": "#282b3f",
+          "surface-container-highest": "#33374f",
+          "surface": "#12131c",
+          "on-surface": "#f1eef8",
+          "on-surface-variant": "#b9b5cb",
+          "outline": "#6d6984",
+          "outline-variant": "#3f425b",
+          "primary": "#ff79b0",
+          "primary-container": "#ffb0cb",
+          "on-primary": "#4c0024",
+          "on-primary-container": "#770543",
+          "secondary": "#44ddbd",
+          "secondary-container": "#00bea0",
+          "on-secondary": "#00382d",
+          "on-secondary-container": "#00463a",
+          "tertiary": "#d4bbff",
+          "tertiary-container": "#b892ff",
+          "error": "#ffb4ab",
+          "error-container": "#93000a",
+        },
+        borderRadius: {
+          "DEFAULT": "1rem",
+          "lg": "1.5rem",
+          "xl": "2rem",
+          "2xl": "2.5rem",
+          "full": "9999px"
+        },
+        spacing: {
+          "space-xs": "0.375rem",
+          "space-sm": "0.625rem",
+          "space-md": "1rem",
+          "space-lg": "1.5rem",
+          "space-xl": "2rem",
+          "margin-desktop": "2.5rem",
+          "margin-tablet": "1.5rem",
+          "gutter-desktop": "1.5rem",
+        }
+      }
+    }
+  };
+</script></head><body class="bg-[#12131c] text-[#f1eef8] min-h-screen selection:bg-[#ff79b0]/30 selection:text-white" style="font-family: 'Comfortaa', cursive, sans-serif;"><header class="fixed top-0 left-0 right-0 z-50 h-16 bg-[#12131c]/90 backdrop-blur-xl border-b border-[#282b3f]/60"><div class="w-full h-full px-gutter-desktop flex items-center justify-between gap-space-md max-w-7xl mx-auto"><div class="flex items-center gap-space-lg flex-shrink-0"><div class="flex items-center gap-space-sm"><div class="w-9 h-9 rounded-2xl bg-gradient-to-tr from-[#ff79b0] to-[#44ddbd] flex items-center justify-center shadow-lg shadow-[#ff79b0]/20"><span class="material-symbols-outlined text-white text-lg">favorite</span></div><span class="text-lg font-bold text-[#f1eef8] tracking-tight">Winter Sun</span><span class="text-xs bg-[#ff79b0]/15 text-[#ff79b0] border border-[#ff79b0]/30 px-2 py-0.5 rounded-full font-semibold">Couple Edition 💕</span></div><div class="hidden xl:flex items-center gap-2 bg-[#181a26] border border-[#282b3f] px-3 py-1 rounded-full"><span class="w-2 h-2 rounded-full bg-[#44ddbd] animate-pulse shadow-sm shadow-[#44ddbd]"></span><span class="text-xs text-[#b9b5cb]">Private Date Room</span><span class="text-xs text-[#6d6984]">•</span><span class="text-xs font-semibold text-[#44ddbd]">Synced 0ms</span></div></div><nav class="hidden lg:flex items-center gap-2 flex-1 justify-center max-w-xl"><a class="text-xs font-semibold px-4 py-2 text-[#b9b5cb] hover:text-[#f1eef8] transition-colors rounded-full" href="#">Watch Together</a><a class="text-xs font-semibold px-4 py-2 text-[#b9b5cb] hover:text-[#f1eef8] transition-colors rounded-full" href="#">Our Playlist</a><a class="text-xs font-semibold px-4 py-2 text-[#b9b5cb] hover:text-[#f1eef8] transition-colors rounded-full" href="#">Text Chat</a><a aria-current="page" class="text-xs font-semibold px-4 py-2 bg-[#202334] text-[#ff79b0] rounded-full border border-[#ff79b0]/25 shadow-sm" href="#">Room Settings</a></nav><div class="flex items-center gap-3 flex-shrink-0"><button class="hidden sm:flex items-center gap-1.5 bg-[#202334] hover:bg-[#282b3f] text-[#f1eef8] border border-[#ff79b0]/30 px-3.5 py-1.5 rounded-full transition-all text-xs font-medium active:scale-95" id="headerInviteBtn" type="button"><span class="material-symbols-outlined text-sm text-[#ff79b0]">send</span><span class="">Invite Partner</span></button><div class="flex items-center -space-x-2 pl-1"><img alt="Alex" class="w-8 h-8 rounded-full ring-2 ring-[#ff79b0] object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDXTpOXIlSeFVEicVyDElYFsWIwXg1XsWvBPNR035bjC8Ash8MYlFNa_iNyJER8fpRQLO8f2CQWWWcEKUFPpOFVNX3muGZSUzJm775WFyN4dgxho8J2uQC6wS0NhKpb0YXIVxsVwOIv9H7SGO41Z1nDofNYZnkoGV5VaQqkfvvdNR7oxoK96metMpmtkbB6oJcaBqyWELHBPzAPAKu4j3KfBhU8MQrVk_OE1VnkReizFJVrTNR1VwMJ"/><img alt="Maya" class="w-8 h-8 rounded-full ring-2 ring-[#44ddbd] object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDO9sSPNmd__nmLAp8mAOHivcoOOF6q2XUMFDqbbPKoQvifG_6VIdpvelBoJnggwm2a0WPNwzYbAjpTyvUb3eNxgg6QL9Zv0eMsQtxwZ2n7esd9B7OWFXUib3txHcczwTLI3liT2Gzc5tQelFiWg5cTtpNJrqkgYPByKGOug18OnOv-IYtL1FxFR6w7kPnSwFzN9aIKmsWIbLmUZDnMRpLyxumx0GxSz1K-aubbqWbuSdrKT1lM7uW6"/></div></div></div></header><main class="w-full pt-16 bg-[#12131c] min-h-screen"><div class="flex flex-col w-full">
+<!-- Cozy Ambient Glows -->
+<div class="relative w-full overflow-hidden">
+<div class="absolute -top-32 left-1/4 w-[30rem] h-[30rem] bg-[#ff79b0]/10 rounded-full blur-[100px] pointer-events-none"></div>
+<div class="absolute -top-24 right-1/4 w-[28rem] h-[28rem] bg-[#44ddbd]/10 rounded-full blur-[100px] pointer-events-none"></div>
+<div class="w-full px-margin-tablet lg:px-margin-desktop py-space-xl flex flex-col gap-6 max-w-7xl mx-auto">
+<!-- Cozy Header Section -->
+<section class="flex flex-col lg:flex-row lg:items-end justify-between gap-4 bg-[#181a26]/70 border border-[#282b3f] rounded-2xl p-6 backdrop-blur-md relative overflow-hidden">
+<div class="absolute top-0 right-0 w-64 h-full bg-gradient-to-l from-[#ff79b0]/5 to-transparent pointer-events-none"></div>
+<div class="flex flex-col gap-2 relative z-10">
+<div class="flex items-center gap-2 text-[#ff79b0] text-xs font-semibold tracking-wide">
+<span class="material-symbols-outlined text-sm leading-none">sparkles</span>
+<span class="">Movie Date Controls • Cozy Sanctuary</span>
+</div>
+<h1 class="text-2xl md:text-3xl font-bold text-[#f1eef8] tracking-tight">Cozy Room Settings</h1>
+<!-- Room Selector & Breadcrumb -->
+<div class="flex flex-wrap items-center gap-2.5 pt-1">
+<div class="relative">
+<button class="flex items-center gap-2 bg-[#202334] hover:bg-[#282b3f] px-4 py-2 rounded-full text-left transition-all border border-[#282b3f] text-xs font-medium text-[#f1eef8]" id="roomDropdownBtn" type="button">
+<span class="material-symbols-outlined text-[#ff79b0] text-base leading-none">local_florist</span>
+<span class="">Our Friday Movie Marathon 🍿</span>
+<span class="text-[11px] bg-[#12131c] text-[#ff79b0] px-2 py-0.5 rounded-full border border-[#ff79b0]/30 font-semibold">DATE-NIGHT-8821</span>
+<span class="material-symbols-outlined text-[#b9b5cb] text-sm leading-none">expand_more</span>
+</button>
+</div>
+<div class="flex items-center gap-1.5 bg-[#202334] px-3.5 py-1.5 rounded-full border border-[#282b3f] text-xs text-[#b9b5cb]">
+<span class="material-symbols-outlined text-[#44ddbd] text-sm leading-none">sentiment_very_satisfied</span>
+<span class="">Sync Quality: Perfect Match (100%)</span>
+</div>
+<div class="flex items-center gap-1.5 bg-[#202334] px-3.5 py-1.5 rounded-full border border-[#282b3f] text-xs text-[#b9b5cb]">
+<span class="material-symbols-outlined text-[#ff79b0] text-sm leading-none">lock_clock</span>
+<span class="">Together for 2h 45m</span>
+</div>
+</div>
+</div>
+<!-- Quick Action Buttons -->
+<div class="flex flex-wrap items-center gap-2.5 self-start lg:self-auto relative z-10">
+<button class="flex items-center gap-1.5 bg-[#202334] hover:bg-[#282b3f] text-[#f1eef8] border border-[#282b3f] px-4 py-2.5 rounded-full transition-all text-xs font-semibold shadow-sm active:scale-95" id="copyInviteBtn" type="button">
+<span class="material-symbols-outlined text-sm text-[#ff79b0] leading-none">link</span>
+<span class="">Share Date Link</span>
+</button>
+<button class="flex items-center gap-1.5 bg-gradient-to-r from-[#ff79b0] to-[#ff9bc4] hover:from-[#ff6aa6] hover:to-[#ff8dbb] text-[#4c0024] font-bold text-xs px-5 py-2.5 rounded-full transition-all shadow-lg shadow-[#ff79b0]/25 active:scale-95" id="saveChangesBtn" type="button">
+<span class="material-symbols-outlined text-sm font-bold leading-none">favorite</span>
+<span class="">Save Preferences</span>
+</button>
+<button class="flex items-center gap-1.5 bg-[#202334] text-[#ffb4ab] hover:bg-[#ffb4ab]/15 border border-[#ffb4ab]/25 px-4 py-2.5 rounded-full transition-all text-xs font-semibold active:scale-95" id="endRoomBtn" type="button">
+<span class="material-symbols-outlined text-sm leading-none">nightlight</span>
+<span class="">Wrap Up Date</span>
+</button>
+</div>
+</section>
+<!-- Realtime Toast Banner -->
+<div class="hidden transition-all duration-300 w-full bg-[#202334] border border-[#ff79b0]/40 px-4 py-3 rounded-2xl flex items-center justify-between shadow-lg" id="toastNotification">
+<div class="flex items-center gap-2.5 text-[#ff79b0] text-xs font-semibold">
+<span class="material-symbols-outlined text-base leading-none">favorite</span>
+<span class="" id="toastMessage">Invite link copied! Send it to your partner.</span>
+</div>
+<span class="text-[11px] text-[#b9b5cb]">just now</span>
+</div>
+<!-- Main 2-Column Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-6 items-start">
+<!-- ================= CARD 1: PLAYBACK & SYNC MODES ================= -->
+<section class="bg-[#181a26] border border-[#282b3f] rounded-2xl p-6 flex flex-col gap-5 shadow-lg">
+<div class="flex items-center justify-between pb-1 border-b border-[#282b3f]/60">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-full bg-[#ff79b0]/15 flex items-center justify-center text-[#ff79b0]">
+<span class="material-symbols-outlined text-lg leading-none">play_circle</span>
+</div>
+<h2 class="text-base font-bold text-[#f1eef8] tracking-tight">Playback &amp; Remote Sharing</h2>
+</div>
+<span class="text-xs px-3 py-1 rounded-full bg-[#ff79b0]/15 text-[#ff79b0] border border-[#ff79b0]/30 font-semibold">Date Mode</span>
+</div>
+<!-- Radio Cards: Control Mode -->
+<div class="flex flex-col gap-2">
+<span class="text-xs text-[#b9b5cb] uppercase tracking-wider font-semibold">Who Holds The Remote?</span>
+<div class="grid grid-cols-1 gap-2.5 pt-1">
+<!-- Option 1: Shared Remote (Recommended for Couples) -->
+<label class="control-card group cursor-pointer relative bg-[#202334] border-2 border-[#ff79b0]/60 p-4 rounded-xl transition-all flex items-start gap-3.5 hover:border-[#ff79b0]">
+<input checked="" class="mt-1 accent-[#ff79b0] w-4 h-4 flex-shrink-0" name="playback_mode" type="radio" value="shared"/>
+<div class="flex flex-col flex-1 min-w-0">
+<div class="flex items-center justify-between gap-2">
+<span class="text-xs font-bold text-[#f1eef8] flex items-center gap-2 flex-wrap">
+Shared Remote (Both Can Pause)
+<span class="text-[10px] bg-[#ff79b0]/20 text-[#ff79b0] border border-[#ff79b0]/40 px-2 py-0.5 rounded-full font-bold">BEST FOR US 💕</span>
+</span>
+<span class="material-symbols-outlined text-[#ff79b0] text-base leading-none flex-shrink-0">supervisor_account</span>
+</div>
+<p class="text-xs text-[#b9b5cb] pt-1 leading-relaxed">
+Either one of you can pause for snack breaks, rewind funny moments, or adjust volume anytime without asking!
+</p>
+</div>
+</label>
+<!-- Option 2: Pass The Remote -->
+<label class="control-card group cursor-pointer relative bg-[#181a26] border border-[#282b3f] hover:bg-[#202334] p-4 rounded-xl transition-all flex items-start gap-3.5">
+<input class="mt-1 accent-[#ff79b0] w-4 h-4 flex-shrink-0" name="playback_mode" type="radio" value="turn_taking"/>
+<div class="flex flex-col flex-1 min-w-0">
+<div class="flex items-center justify-between gap-2">
+<span class="text-xs font-bold text-[#f1eef8]">Take Turns (Pass the Remote)</span>
+<span class="material-symbols-outlined text-[#b9b5cb] text-base leading-none flex-shrink-0">settings_remote</span>
+</div>
+<p class="text-xs text-[#b9b5cb] pt-1 leading-relaxed">
+Keep one active remote holder. Pass the cute remote token back and forth whenever someone wants to steer the playlist.
+</p>
+</div>
+</label>
+<!-- Option 3: Host Exclusive -->
+<label class="control-card group cursor-pointer relative bg-[#181a26] border border-[#282b3f] hover:bg-[#202334] p-4 rounded-xl transition-all flex items-start gap-3.5">
+<input class="mt-1 accent-[#ff79b0] w-4 h-4 flex-shrink-0" name="playback_mode" type="radio" value="host_only"/>
+<div class="flex flex-col flex-1 min-w-0">
+<div class="flex items-center justify-between gap-2">
+<span class="text-xs font-bold text-[#f1eef8]">Host Curated</span>
+<span class="material-symbols-outlined text-[#b9b5cb] text-base leading-none flex-shrink-0">lock</span>
+</div>
+<p class="text-xs text-[#b9b5cb] pt-1 leading-relaxed">
+Only Alex controls playback. Perfect if you planned a surprise watch order or want Maya to just sit back and relax.
+</p>
+</div>
+</label>
+</div>
+</div>
+<!-- Couple Comfort Toggles Section -->
+<div class="flex flex-col gap-3 pt-1">
+<!-- Toggle 1 -->
+<div class="flex items-center justify-between p-4 bg-[#202334] border border-[#282b3f] rounded-xl">
+<div class="flex flex-col gap-0.5 pr-4">
+<span class="text-xs font-bold text-[#f1eef8]">Snack Break Auto-Pause</span>
+<span class="text-xs text-[#b9b5cb] leading-relaxed">If either of your connections lags or buffers, pauses gently so no one misses a scene.</span>
+</div>
+<button aria-checked="true" class="sync-toggle w-12 h-6 rounded-full bg-[#ff79b0] flex items-center p-0.5 transition-colors duration-200 flex-shrink-0" role="switch" type="button">
+<div class="w-5 h-5 rounded-full bg-[#4c0024] transform translate-x-6 transition-transform duration-200 shadow-sm flex items-center justify-center">
+<span class="material-symbols-outlined text-[10px] text-white leading-none">check</span>
+</div>
+</button>
+</div>
+<!-- Toggle 2 -->
+<div class="flex items-center justify-between p-4 bg-[#202334] border border-[#282b3f] rounded-xl">
+<div class="flex flex-col gap-0.5 pr-4">
+<span class="text-xs font-bold text-[#f1eef8]">Gentle Audio Equalizer</span>
+<span class="text-xs text-[#b9b5cb] leading-relaxed">Balances loud explosions and soft whispers so late-night watching stays cozy and relaxing.</span>
+</div>
+<button aria-checked="true" class="sync-toggle w-12 h-6 rounded-full bg-[#ff79b0] flex items-center p-0.5 transition-colors duration-200 flex-shrink-0" role="switch" type="button">
+<div class="w-5 h-5 rounded-full bg-[#4c0024] transform translate-x-6 transition-transform duration-200 shadow-sm flex items-center justify-center">
+<span class="material-symbols-outlined text-[10px] text-white leading-none">check</span>
+</div>
+</button>
+</div>
+<!-- Cozy Status Pill -->
+<div class="bg-[#12131c] p-4 rounded-xl border border-[#282b3f] flex flex-col gap-2">
+<div class="flex justify-between items-center text-[#b9b5cb] text-xs">
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[#44ddbd] text-sm leading-none">favorite</span> Connection Harmony</span>
+<span class="text-[#44ddbd] font-semibold">100% In Sync</span>
+</div>
+<div class="w-full h-2 bg-[#202334] rounded-full overflow-hidden flex">
+<div class="h-full bg-gradient-to-r from-[#ff79b0] to-[#44ddbd] w-full rounded-full"></div>
+</div>
+<div class="flex justify-between text-[#b9b5cb] text-[11px] pt-0.5">
+<span class="">Direct Partner Link: Active</span>
+<span class="">Lag Offset: 0.2ms (Seamless)</span>
+</div>
+</div>
+</div>
+</section>
+<!-- ================= CARD 2: GUEST ACCESS & DATE MEMBERS ================= -->
+<section class="bg-[#181a26] border border-[#282b3f] rounded-2xl p-6 flex flex-col gap-5 shadow-lg">
+<div class="flex items-center justify-between pb-1 border-b border-[#282b3f]/60">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-full bg-[#44ddbd]/15 flex items-center justify-center text-[#44ddbd]">
+<span class="material-symbols-outlined text-lg leading-none">hotel_class</span>
+</div>
+<h2 class="text-base font-bold text-[#f1eef8] tracking-tight">Our Cozy Room &amp; Partner</h2>
+</div>
+<span class="text-xs px-3 py-1 rounded-full bg-[#44ddbd]/15 text-[#44ddbd] border border-[#44ddbd]/30 font-semibold">2 Loving Viewers</span>
+</div>
+<!-- Room Privacy Mode -->
+<div class="grid grid-cols-2 gap-2 bg-[#202334] p-1.5 rounded-full border border-[#282b3f]">
+<button class="flex items-center justify-center gap-1.5 py-2 rounded-full bg-gradient-to-r from-[#ff79b0] to-[#ff9bc4] text-[#4c0024] font-bold text-xs shadow-sm transition-all" type="button">
+<span class="material-symbols-outlined text-sm font-bold leading-none">lock_open</span>
+Couples Only (Secret)
+</button>
+<button class="flex items-center justify-center gap-1.5 py-2 rounded-full text-[#b9b5cb] hover:text-[#f1eef8] text-xs font-semibold transition-all" type="button">
+<span class="material-symbols-outlined text-sm leading-none">group</span>
+Add Close Friends
+</button>
+</div>
+<!-- Privacy Protection Pill -->
+<div class="flex items-center justify-between p-4 bg-[#202334] border border-[#282b3f] rounded-xl">
+<div class="flex flex-col gap-0.5 pr-4">
+<span class="text-xs font-bold text-[#f1eef8]">Strict Couple Privacy</span>
+<span class="text-xs text-[#b9b5cb] leading-relaxed">No stranger can join or view the date room. IP addresses &amp; network details are permanently shielded.</span>
+</div>
+<button aria-checked="true" class="sync-toggle w-12 h-6 rounded-full bg-[#44ddbd] flex items-center p-0.5 transition-colors duration-200 flex-shrink-0" role="switch" type="button">
+<div class="w-5 h-5 rounded-full bg-[#00382d] transform translate-x-6 transition-transform duration-200 shadow-sm flex items-center justify-center">
+<span class="material-symbols-outlined text-[10px] text-white leading-none">check</span>
+</div>
+</button>
+</div>
+<!-- Date Attendees Table -->
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="text-xs text-[#b9b5cb] uppercase tracking-wider font-semibold">Date Night Members</span>
+<span class="text-xs text-[#ff79b0] font-semibold flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-[#ff79b0]"></span>In Room (2/2)</span>
+</div>
+<div class="bg-[#12131c] rounded-xl border border-[#282b3f] overflow-hidden">
+<table class="w-full text-left text-xs">
+<thead>
+<tr class="bg-[#202334] text-[#b9b5cb] text-[11px] font-semibold border-b border-[#282b3f]">
+<th class="py-2.5 px-4 font-semibold">SWEETHEARTS</th>
+<th class="py-2.5 px-3 font-semibold text-center">BADGE</th>
+<th class="py-2.5 px-3 font-semibold text-center">STATUS</th>
+<th class="py-2.5 px-4 font-semibold text-right">REMOTE</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-[#282b3f]/50">
+<!-- Alex (Host) -->
+<tr class="hover:bg-[#202334]/40 transition-colors">
+<td class="py-3 px-4">
+<div class="flex items-center gap-3">
+<div class="relative">
+<img class="w-9 h-9 rounded-full object-cover ring-2 ring-[#ff79b0]" data-alt="Portrait of Alex" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDXTpOXIlSeFVEicVyDElYFsWIwXg1XsWvBPNR035bjC8Ash8MYlFNa_iNyJER8fpRQLO8f2CQWWWcEKUFPpOFVNX3muGZSUzJm775WFyN4dgxho8J2uQC6wS0NhKpb0YXIVxsVwOIv9H7SGO41Z1nDofNYZnkoGV5VaQqkfvvdNR7oxoK96metMpmtkbB6oJcaBqyWELHBPzAPAKu4j3KfBhU8MQrVk_OE1VnkReizFJVrTNR1VwMJ"/>
+<span class="absolute -bottom-1 -right-1 text-xs">🍿</span>
+</div>
+<div class="flex flex-col">
+<span class="font-bold text-[#f1eef8] text-xs">Alex (Him)</span>
+<span class="text-[11px] text-[#b9b5cb]">Ready with popcorn</span>
+</div>
+</div>
+</td>
+<td class="py-3 px-3 text-center">
+<span class="text-[10px] uppercase bg-[#ff79b0]/20 text-[#ff79b0] border border-[#ff79b0]/40 px-2.5 py-0.5 rounded-full font-bold">HOST 👑</span>
+</td>
+<td class="py-3 px-3 text-center text-[#44ddbd] font-medium text-xs">Watching</td>
+<td class="py-3 px-4 text-right">
+<div class="flex items-center justify-end">
+<span class="material-symbols-outlined text-[#ff79b0] text-base leading-none" title="Has Remote">settings_remote</span>
+</div>
+</td>
+</tr>
+<!-- Maya (Co-Host / Partner) -->
+<tr class="hover:bg-[#202334]/40 transition-colors">
+<td class="py-3 px-4">
+<div class="flex items-center gap-3">
+<div class="relative">
+<img class="w-9 h-9 rounded-full object-cover ring-2 ring-[#44ddbd]" data-alt="Portrait of Maya" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDO9sSPNmd__nmLAp8mAOHivcoOOF6q2XUMFDqbbPKoQvifG_6VIdpvelBoJnggwm2a0WPNwzYbAjpTyvUb3eNxgg6QL9Zv0eMsQtxwZ2n7esd9B7OWFXUib3txHcczwTLI3liT2Gzc5tQelFiWg5cTtpNJrqkgYPByKGOug18OnOv-IYtL1FxFR6w7kPnSwFzN9aIKmsWIbLmUZDnMRpLyxumx0GxSz1K-aubbqWbuSdrKT1lM7uW6"/>
+<span class="absolute -bottom-1 -right-1 text-xs">💖</span>
+</div>
+<div class="flex flex-col">
+<span class="font-bold text-[#f1eef8] text-xs">Maya (Her)</span>
+<span class="text-[11px] text-[#b9b5cb]">Cozy in blanket</span>
+</div>
+</div>
+</td>
+<td class="py-3 px-3 text-center">
+<span class="text-[10px] uppercase bg-[#44ddbd]/20 text-[#44ddbd] border border-[#44ddbd]/40 px-2.5 py-0.5 rounded-full font-bold">PLAYER 2 🎮</span>
+</td>
+<td class="py-3 px-3 text-center text-[#44ddbd] font-medium text-xs">Watching</td>
+<td class="py-3 px-4 text-right">
+<div class="flex items-center justify-end">
+<button class="p-1 hover:bg-[#202334] rounded-full text-[#44ddbd] transition-colors" title="Remote enabled" type="button">
+<span class="material-symbols-outlined text-base leading-none">check_circle</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<!-- ================= CARD 3: STREAM QUALITY & COZY SHARING ================= -->
+<section class="bg-[#181a26] border border-[#282b3f] rounded-2xl p-6 flex flex-col gap-5 shadow-lg">
+<div class="flex items-center justify-between pb-1 border-b border-[#282b3f]/60">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-full bg-[#ff79b0]/15 flex items-center justify-center text-[#ff79b0]">
+<span class="material-symbols-outlined text-lg leading-none">hd</span>
+</div>
+<h2 class="text-base font-bold text-[#f1eef8] tracking-tight">Stream Quality &amp; Comfort</h2>
+</div>
+<span class="text-xs px-3 py-1 rounded-full bg-[#ff79b0]/15 text-[#ff79b0] border border-[#ff79b0]/30 font-semibold">Crystal Clear</span>
+</div>
+<!-- Streaming Mode Pill -->
+<div class="flex items-center justify-between bg-[#202334] border border-[#282b3f] p-4 rounded-xl">
+<div class="flex flex-col">
+<span class="text-xs font-bold text-[#f1eef8]">Cinema Quality Mode</span>
+<span class="text-xs text-[#b9b5cb]">High-fidelity lossless streaming directly to each other</span>
+</div>
+<div class="flex items-center gap-1.5 bg-[#44ddbd]/15 border border-[#44ddbd]/30 px-3 py-1 rounded-full">
+<span class="w-2 h-2 rounded-full bg-[#44ddbd]"></span>
+<span class="text-xs text-[#44ddbd] font-bold">Crisp 1080p / 4K</span>
+</div>
+</div>
+<!-- Video Stream Allocation Slider -->
+<div class="flex flex-col gap-2.5 bg-[#202334] border border-[#282b3f] p-4 rounded-xl">
+<div class="flex justify-between items-center">
+<div class="flex flex-col">
+<span class="text-xs font-bold text-[#f1eef8]">Streaming Smoothness</span>
+<span class="text-xs text-[#b9b5cb]">Keeps both devices perfectly synced even on Wi-Fi</span>
+</div>
+<span class="text-xs font-bold text-[#ff79b0]" id="sliderValueText">Ultra Smooth (Fastest)</span>
+</div>
+<div class="py-2">
+<input class="w-full accent-[#ff79b0] h-2 bg-[#12131c] rounded-full cursor-pointer" id="bandwidthSlider" max="110" min="10" step="10" type="range" value="110"/>
+<div class="flex justify-between text-[11px] text-[#b9b5cb] pt-2">
+<span class="">Battery Saver</span>
+<span class="">Balanced</span>
+<span class="">High Quality</span>
+<span class="text-[#ff79b0] font-bold">Ultra Smooth ✨</span>
+</div>
+</div>
+</div>
+<!-- Quality Preferences Options -->
+<div class="flex flex-col gap-2">
+<span class="text-xs text-[#b9b5cb] uppercase tracking-wider font-semibold">Cozy Viewing Options</span>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-1">
+<label class="cursor-pointer bg-[#202334] border-2 border-[#ff79b0]/60 p-4 rounded-xl flex items-start gap-3 transition-all hover:border-[#ff79b0]">
+<input checked="" class="mt-1 accent-[#ff79b0] w-4 h-4 flex-shrink-0" name="transcode_opt" type="radio"/>
+<div class="flex flex-col">
+<span class="text-xs font-bold text-[#f1eef8]">Original Quality</span>
+<span class="text-xs text-[#b9b5cb] pt-0.5">Crystal clear colors &amp; perfect audio matching your source file.</span>
+</div>
+</label>
+<label class="cursor-pointer bg-[#181a26] border border-[#282b3f] hover:bg-[#202334] p-4 rounded-xl flex items-start gap-3 transition-all">
+<input class="mt-1 accent-[#ff79b0] w-4 h-4 flex-shrink-0" name="transcode_opt" type="radio"/>
+<div class="flex flex-col">
+<span class="text-xs font-bold text-[#f1eef8]">Adaptive Cozy</span>
+<span class="text-xs text-[#b9b5cb] pt-0.5">Auto-adjusts if one of you moves to phone or has slow Wi-Fi.</span>
+</div>
+</label>
+</div>
+</div>
+</section>
+<!-- ================= CARD 4: CUTE SUBTITLE & AUDIO STYLING ================= -->
+<section class="bg-[#181a26] border border-[#282b3f] rounded-2xl p-6 flex flex-col gap-5 shadow-lg">
+<div class="flex items-center justify-between pb-1 border-b border-[#282b3f]/60">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-full bg-[#44ddbd]/15 flex items-center justify-center text-[#44ddbd]">
+<span class="material-symbols-outlined text-lg leading-none">subtitles</span>
+</div>
+<h2 class="text-base font-bold text-[#f1eef8] tracking-tight">Audio &amp; Subtitle Styling</h2>
+</div>
+<span class="text-xs px-3 py-1 rounded-full bg-[#44ddbd]/15 text-[#44ddbd] border border-[#44ddbd]/30 font-semibold">Custom Look</span>
+</div>
+<!-- Dropdowns Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
+<!-- Audio Select -->
+<div class="flex flex-col gap-1.5">
+<label class="text-xs text-[#b9b5cb] uppercase tracking-wider font-semibold" for="audioLangSelect">Audio Language</label>
+<div class="relative">
+<select class="w-full bg-[#202334] border border-[#282b3f] text-[#f1eef8] py-2.5 pl-3.5 pr-9 rounded-xl appearance-none text-xs focus:outline-none focus:border-[#ff79b0] cursor-pointer" id="audioLangSelect">
+<option selected="">English (Original Cinema Track)</option>
+<option>English (Director's Commentary)</option>
+<option>Japanese (Original with Subs)</option>
+<option>French (Sweet Romance Dub)</option>
+<option>Spanish (Castilian)</option>
+</select>
+<span class="material-symbols-outlined text-[#b9b5cb] absolute right-3 top-2.5 text-base leading-none pointer-events-none">expand_more</span>
+</div>
+</div>
+<!-- Subtitle Select -->
+<div class="flex flex-col gap-1.5">
+<label class="text-xs text-[#b9b5cb] uppercase tracking-wider font-semibold" for="subLangSelect">Subtitles</label>
+<div class="relative">
+<select class="w-full bg-[#202334] border border-[#282b3f] text-[#f1eef8] py-2.5 pl-3.5 pr-9 rounded-xl appearance-none text-xs focus:outline-none focus:border-[#ff79b0] cursor-pointer" id="subLangSelect">
+<option selected="">English (Complete Dialogue)</option>
+<option>English (Foreign Speech Only)</option>
+<option>Spanish (Latin America)</option>
+<option>French (Subtitles)</option>
+<option>None (Subtitles Off)</option>
+</select>
+<span class="material-symbols-outlined text-[#b9b5cb] absolute right-3 top-2.5 text-base leading-none pointer-events-none">expand_more</span>
+</div>
+</div>
+</div>
+<!-- Auto-fetch Subtitles Toggle -->
+<div class="flex items-center justify-between p-4 bg-[#202334] border border-[#282b3f] rounded-xl">
+<div class="flex flex-col gap-0.5 pr-4">
+<span class="text-xs font-bold text-[#f1eef8]">Auto-Find Cozy Subtitles</span>
+<span class="text-xs text-[#b9b5cb] leading-relaxed">Automatically downloads perfectly matched subtitles so you don't have to look for them.</span>
+</div>
+<button aria-checked="true" class="sync-toggle w-12 h-6 rounded-full bg-[#ff79b0] flex items-center p-0.5 transition-colors duration-200 flex-shrink-0" role="switch" type="button">
+<div class="w-5 h-5 rounded-full bg-[#4c0024] transform translate-x-6 transition-transform duration-200 shadow-sm flex items-center justify-center">
+<span class="material-symbols-outlined text-[10px] text-white leading-none">check</span>
+</div>
+</button>
+</div>
+<!-- Cute Subtitle Style Presets Preview -->
+<div class="flex flex-col gap-2">
+<span class="text-xs text-[#b9b5cb] uppercase tracking-wider font-semibold">Subtitle Palette (Soft &amp; Readable)</span>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5 pt-1">
+<!-- Pastel Bubblegum Pink (Selected) -->
+<div class="sub-preset-card cursor-pointer p-3.5 bg-[#202334] border-2 border-[#ff79b0] rounded-xl flex flex-col justify-between h-28 relative transition-all shadow-sm">
+<div class="flex justify-between items-center">
+<span class="text-xs font-bold text-[#f1eef8]">Pastel Pink</span>
+<span class="material-symbols-outlined text-[#ff79b0] text-base leading-none">favorite</span>
+</div>
+<div class="w-full text-center py-1.5 bg-[#12131c]/90 rounded-lg">
+<span class="text-xs font-bold tracking-wide text-[#ff79b0]" style="text-shadow: 0 2px 4px rgba(0,0,0,0.8);">"I love this part! 💕"</span>
+</div>
+</div>
+<!-- Warm Mint Teal Preset -->
+<div class="sub-preset-card cursor-pointer p-3.5 bg-[#181a26] border border-[#282b3f] hover:bg-[#202334] rounded-xl flex flex-col justify-between h-28 transition-all">
+<div class="flex justify-between items-center">
+<span class="text-xs font-bold text-[#f1eef8]">Warm Mint</span>
+<span class="w-3.5 h-3.5 rounded-full bg-[#44ddbd]/30 border border-[#44ddbd]"></span>
+</div>
+<div class="w-full text-center py-1.5 bg-[#12131c]/90 rounded-lg">
+<span class="text-xs font-bold tracking-wide text-[#44ddbd]" style="text-shadow: 0 2px 4px rgba(0,0,0,0.8);">"I love this part! 🌿"</span>
+</div>
+</div>
+<!-- Soft Classic White Preset -->
+<div class="sub-preset-card cursor-pointer p-3.5 bg-[#181a26] border border-[#282b3f] hover:bg-[#202334] rounded-xl flex flex-col justify-between h-28 transition-all">
+<div class="flex justify-between items-center">
+<span class="text-xs font-bold text-[#f1eef8]">Cozy White</span>
+<span class="w-3.5 h-3.5 rounded-full bg-white/20 border border-white/50"></span>
+</div>
+<div class="w-full text-center py-1.5 bg-[#12131c]/90 rounded-lg">
+<span class="text-xs font-medium tracking-wide text-[#f1eef8]" style="text-shadow: 0 2px 4px rgba(0,0,0,0.8);">"I love this part!"</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Fine-tune Delay Box -->
+<div class="bg-[#202334] border border-[#282b3f] p-4 rounded-xl flex items-center justify-between">
+<div class="flex flex-col">
+<span class="text-xs font-bold text-[#f1eef8]">Bluetooth Headphone Sync Offset</span>
+<span class="text-xs text-[#b9b5cb]">Fixes tiny audio delay when using AirPods or wireless buds</span>
+</div>
+<div class="flex items-center gap-1.5 text-xs font-bold">
+<button class="w-7 h-7 bg-[#181a26] hover:bg-[#282b3f] border border-[#282b3f] rounded-lg text-[#f1eef8] flex items-center justify-center transition-all" type="button">-</button>
+<span class="px-2 text-[#44ddbd]">0ms</span>
+<button class="w-7 h-7 bg-[#181a26] hover:bg-[#282b3f] border border-[#282b3f] rounded-lg text-[#f1eef8] flex items-center justify-center transition-all" type="button">+</button>
+</div>
+</div>
+</section>
+</div>
+<!-- Bottom Cozy Security & Status Strip -->
+<section class="bg-[#181a26] border border-[#282b3f] rounded-2xl p-4 flex flex-col md:flex-row items-center justify-between gap-3 shadow-md">
+<div class="flex items-center gap-3">
+<div class="w-7 h-7 rounded-full bg-[#ff79b0]/15 flex items-center justify-center text-[#ff79b0]">
+<span class="material-symbols-outlined text-base leading-none">lock</span>
+</div>
+<div class="flex flex-col">
+<span class="text-xs font-bold text-[#f1eef8]">End-to-End Encrypted Couple Stream</span>
+<span class="text-[11px] text-[#b9b5cb]">Only you and your partner can watch • No logs or recordings stored</span>
+</div>
+</div>
+<div class="flex items-center gap-4 text-[11px] text-[#b9b5cb]">
+<span class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-[#44ddbd] animate-pulse"></span>Partner Connected</span>
+<span class="hidden sm:inline text-[#282b3f]">•</span>
+<span class="">Text Chat Only (No Mic / Cam Needed)</span>
+</div>
+</section>
+</div>
+</div>
+</div>
+<script>
+  // Quick Copy Feedback
+  const copyBtn = document.getElementById('copyInviteBtn');
+  const headerInvite = document.getElementById('headerInviteBtn');
+  const toast = document.getElementById('toastNotification');
+  const toastMsg = document.getElementById('toastMessage');
+
+  const triggerInvite = () => {
+    navigator.clipboard?.writeText('https://syncstream.app/watch/DATE-NIGHT-8821');
+    if (toast && toastMsg) {
+      toastMsg.innerText = 'Date link copied! Send it to your partner 💕 (https://syncstream.app/watch/DATE-NIGHT-8821)';
+      toast.classList.remove('hidden');
+      setTimeout(() => {
+        toast.classList.add('hidden');
+      }, 3500);
+    }
+  };
+
+  if (copyBtn) copyBtn.addEventListener('click', triggerInvite);
+  if (headerInvite) headerInvite.addEventListener('click', triggerInvite);
+
+  // Save changes button interaction
+  const saveBtn = document.getElementById('saveChangesBtn');
+  if (saveBtn && toast) {
+    saveBtn.addEventListener('click', () => {
+      toastMsg.innerText = 'Preferences saved! Ready for a cozy movie night 🍿✨';
+      toast.classList.remove('hidden');
+      setTimeout(() => {
+        toast.classList.add('hidden');
+      }, 3500);
+    });
+  }
+
+  // Toggle Switches Interaction
+  document.querySelectorAll('.sync-toggle').forEach(toggle => {
+    toggle.addEventListener('click', () => {
+      const isChecked = toggle.getAttribute('aria-checked') === 'true';
+      const newState = !isChecked;
+      toggle.setAttribute('aria-checked', String(newState));
+      const thumb = toggle.querySelector('div');
+      const icon = thumb ? thumb.querySelector('.material-symbols-outlined') : null;
+      
+      if (newState) {
+        toggle.classList.remove('bg-[#282b3f]');
+        toggle.classList.add('bg-[#ff79b0]');
+        thumb.classList.remove('translate-x-0', 'bg-[#b9b5cb]');
+        thumb.classList.add('translate-x-6', 'bg-[#4c0024]');
+        if (icon) icon.classList.remove('hidden');
+      } else {
+        toggle.classList.remove('bg-[#ff79b0]', 'bg-[#44ddbd]');
+        toggle.classList.add('bg-[#282b3f]');
+        thumb.classList.remove('translate-x-6', 'bg-[#4c0024]', 'bg-[#00382d]');
+        thumb.classList.add('translate-x-0', 'bg-[#b9b5cb]');
+        if (icon) icon.classList.add('hidden');
+      }
+    });
+  });
+
+  // Slider Text Update
+  const slider = document.getElementById('bandwidthSlider');
+  const sliderText = document.getElementById('sliderValueText');
+  if (slider && sliderText) {
+    slider.addEventListener('input', (e) => {
+      const val = parseInt(e.target.value, 10);
+      if (val >= 90) {
+        sliderText.innerText = 'Ultra Smooth (Fastest) ✨';
+      } else if (val >= 50) {
+        sliderText.innerText = 'HD Balanced (Cozy)';
+      } else {
+        sliderText.innerText = 'Battery Saver Mode';
+      }
+    });
+  }
+
+  // Subtitle Preset Selection
+  const subPresets = document.querySelectorAll('.sub-preset-card');
+  subPresets.forEach(preset => {
+    preset.addEventListener('click', () => {
+      subPresets.forEach(p => {
+        p.classList.remove('border-2', 'border-[#ff79b0]', 'bg-[#202334]');
+        p.classList.add('border', 'border-[#282b3f]', 'bg-[#181a26]');
+        const iconSpan = p.querySelector('.material-symbols-outlined');
+        if (iconSpan) {
+          iconSpan.remove();
+          const dot = document.createElement('span');
+          dot.className = 'w-3.5 h-3.5 rounded-full bg-white/20 border border-white/50';
+          p.querySelector('.flex.justify-between').appendChild(dot);
+        }
+      });
+      preset.classList.remove('border-[#282b3f]', 'bg-[#181a26]');
+      preset.classList.add('border-2', 'border-[#ff79b0]', 'bg-[#202334]');
+      const dot = preset.querySelector('.w-3\\.5');
+      if (dot) dot.remove();
+      const check = document.createElement('span');
+      check.className = 'material-symbols-outlined text-[#ff79b0] text-base leading-none';
+      check.innerText = 'favorite';
+      preset.querySelector('.flex.justify-between').appendChild(check);
+    });
+  });
+</script></main><footer class="w-full bg-[#12131c] border-t border-[#282b3f]/60 py-6"><div class="w-full px-gutter-desktop flex flex-col md:flex-row items-center justify-between gap-3 text-xs text-[#b9b5cb] max-w-7xl mx-auto"><div class="">Made with 💕 by Winter Sun for couples watching movies together.</div><div class="flex items-center gap-4 text-[11px]"><span class="text-[#44ddbd]">Room: DATE-NIGHT-8821</span><span class="">•</span><span class="">Private &amp; Intimate</span><span class="">•</span><span class="text-[#ff79b0]">Sync Delay: 0ms</span></div></div></footer>
+</body></html>

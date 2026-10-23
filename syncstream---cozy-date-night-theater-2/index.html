@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>SyncStream - Cozy Date Night Theater</title>
+    <meta name="description" content="Synchronized watch party and cozy cinema for couples and friends with torrent & local file streaming, remote sharing, and real-time chat overlay." />
+    <meta property="og:title" content="SyncStream - Cozy Date Night Theater" />
+    <meta property="og:description" content="Synchronized watch party and cozy cinema for couples and friends with torrent & local file streaming, remote sharing, and real-time chat overlay." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Comfortaa:wght@600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
+    <script>
+      // Ignore transient WebSocket / HMR disconnection errors in sandbox
+      window.addEventListener('unhandledrejection', function(event) {
+        if (event.reason && (
+          event.reason.message?.includes('WebSocket') ||
+          event.reason.message?.includes('closed without opened') ||
+          event.reason.message?.includes('vite:ws')
+        )) {
+          event.preventDefault();
+        }
+      });
+      window.addEventListener('error', function(event) {
+        if (event.message && (
+          event.message.includes('WebSocket') ||
+          event.message.includes('closed without opened')
+        )) {
+          event.preventDefault();
+        }
+      });
+    </script>
+  </head>
+  <body class="bg-[#12131c] text-[#f1eef8] antialiased selection:bg-[#ff79b0]/30 selection:text-[#ff79b0]">
+    <div id="root"></div>
+    <script src="/js/webtorrent.min.js"></script>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

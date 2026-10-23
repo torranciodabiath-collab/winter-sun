@@ -1,0 +1,8 @@
+{
+  "name": "SyncStream - Cozy Date Night Theater",
+  "description": "Synchronized watch party and cozy cinema for couples and friends with torrent & local file streaming, remote sharing, and real-time chat overlay.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
